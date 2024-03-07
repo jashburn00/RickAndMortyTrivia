@@ -7,6 +7,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    overflow: hidden;
 }
 
 :root {
@@ -24,8 +25,9 @@ ul{
 
 li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
+    color: white;
     margin: 2px;
     padding: 2px;
 }
@@ -33,9 +35,14 @@ li {
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, var(--cc-lighter), var(--cc-darker));
+    /*background-image: linear-gradient(to right, var(--cc-lighter), var(--cc-darker));*/
+    background-image: url('./images/space.jpg');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
 }
 
 h1 {
@@ -94,20 +101,21 @@ img {
     background-color: none;
 }
 
-#subbtn {
-    background-image: linear-gradient(to bottom, var(--cc-lighter), var(--cc-darker));
+.subbtn {
+    background-image: linear-gradient(to bottom, white, darkgrey);
     border-radius: 5px;
-    padding: 4px;
+    padding: 10px;
+    margin: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#subbtn:hover {
-    background-image: linear-gradient(to bottom, cyan, pink);
+.subbtn:hover {
+    background-image: linear-gradient(to bottom, cyan, white);
     
 }
 
-#subbtn:focus {
-    background-image: linear-gradient(to bottom, cyan, pink);
+.subbtn:focus {
+    background-image: linear-gradient(to bottom, cyan, white);
     
 }
 
@@ -138,6 +146,17 @@ img {
     background-image: linear-gradient(to bottom, var(--cc-lighter), cyan);
 }
 
+.buttonRow {
+    background: none;
+    margin: 4px;
+    padding: 2px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.5%;
+}
+
 .topnav {
     margin: 0px;
     padding: 6px;
@@ -149,16 +168,17 @@ img {
 }
 
 .row {
-    background-color: var(--cc-darker);
+    /* background-color: var(--cc-darker); */
+    background-image: linear-gradient(to bottom right, var(--cc-darker), var(--cc-lighter));
     margin: 4px;
     padding: 2px;
     border: 2px solid cyan;
     display: inline-block;
-    width: 100%;
+    width: 99.5%;
 }
 
 .leftCol {
-    background-color: var(--cc-darker);
+    /* background-color: var(--cc-darker); */
     margin: 2px;
     padding: 2px;
     border: none;
@@ -168,7 +188,7 @@ img {
 }
 
 .rightCol {
-    background-color: var(--cc-darker);
+    /* background-color: var(--cc-darker); */
     margin: 2px;
     padding: 2px;
     border: none;
